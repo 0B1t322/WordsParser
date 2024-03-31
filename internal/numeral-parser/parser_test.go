@@ -35,7 +35,6 @@ func Test_numeralWordsToNumeral(t *testing.T) {
 			wantErr: assert.Error,
 		},
 	}
-
 	for _, tt := range testCases {
 		tt := tt
 		t.Run(
@@ -48,5 +47,4 @@ func Test_numeralWordsToNumeral(t *testing.T) {
 			},
 		)
 	}
-
 }
