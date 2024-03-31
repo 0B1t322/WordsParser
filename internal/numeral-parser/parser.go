@@ -56,19 +56,6 @@ func (p *NumeralParser) ParseAllLines() error {
 }
 
 var (
-	//numeralRussianRegex = regexp.MustCompile(
-	//	fmt.Sprintf(
-	//		`(?i)(?:%s)`,
-	//		strings.Join(
-	//			lo.Map(
-	//				RussianNumbers, func(item string, _ int) string {
-	//					return fmt.Sprintf(`([^а-яА-Я]|^)%s(\s|$)`, item)
-	//				},
-	//			),
-	//			"|",
-	//		),
-	//	),
-	//)
 	re                    = regexp.MustCompile(`\s`)
 	russianNumeralPrinter = message.NewPrinter(language.Russian)
 )
